@@ -9,5 +9,5 @@ import (
 
 func APIAuthV1(route fiber.Router) {
 	api := route.Group("auth")
-	api.Post("/login", middleware.ValidatorMiddleware(&request.AuthLoginRequest{}), controller.AuthLogin)
+	api.Post("/login", middleware.ValidatorMiddleware[request.AuthLoginRequest](), controller.AuthLogin)
 }
