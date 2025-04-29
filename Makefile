@@ -40,7 +40,7 @@ md:
 	$(MIGRATE_CMD) -path $(MIGRATION_DIR) -database "$(DB_DSN)" down
 mf:
 	$(MIGRATE_CMD) -path $(MIGRATION_DIR) -database "$(DB_DSN)" force $(version)
-md:
+mdrop:
 	$(MIGRATE_CMD) -path $(MIGRATION_DIR) -database "$(DB_DSN)" drop -f
 mn:
 	$(MIGRATE_CMD) create -ext sql -dir $(MIGRATION_DIR) -seq $(name)
