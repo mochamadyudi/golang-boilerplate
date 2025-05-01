@@ -7,4 +7,6 @@ func Routes(app fiber.Router) {
 
 	api := app.Group("/api/v1")
 	APIAuthV1(api)
+	APIUserV1(api)
+	RouteWeb(app)
 }

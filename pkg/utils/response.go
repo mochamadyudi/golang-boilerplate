@@ -5,6 +5,7 @@ type Pagination struct {
 	Page    int `json:"page"`
 	Limit   int `json:"limit"`
 	Maxpage int `json:"max_page"`
+	Offset  int `json:"offset,omitempty"`
 }
 
 type Meta struct {

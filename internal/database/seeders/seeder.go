@@ -1,7 +1,7 @@
 package seeders
 
 import (
-	"core.yuyuid.id/internal/model"
+	"core.yuyuid.id/internal/app/model"
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 )
